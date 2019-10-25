@@ -1,0 +1,541 @@
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-weight: 700;
+}
+P {
+  font-family: "Open Sans", sans-serif;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  margin: auto;
+  position: relative;
+}
+.nav-container {
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin: auto;
+  max-width: 70%;
+  padding-top: 1.5em;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 1.7em;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+.nav-title > a {
+  color: #fff;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+.nav > .nav-links > a {
+  color: #efefef;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.nav > .nav-links > a:hover {
+  text-decoration: underline;
+}
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:650px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 1.4em;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  /* .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  } */
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 4em;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.footer {
+  background-color: #151515;
+  color: white;
+  height: 100%;
+  padding-bottom: 4em;
+  position: relative;
+}
+.footer-inner {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  max-width: 60%;
+}
+.footer-inner-container {
+  width: 100%;
+}
+.footer-links {
+  border-bottom: 1px solid white;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+  width: 50%;
+}
+.footer-link {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.footer-social {
+  margin-top: 2.1em;
+  width: 30%;
+}
+.footer-social-icon  {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  max-width: 40px;
+  width: 100%;
+}
+.footer-city {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.footer-torrance {
+  width: 8em;
+}
+.footer-city-details {
+  margin-left: 2em;
+}
+.footer-copyright {
+  margin-top: 2em;
+  margin-left: 1em;
+  font-size: 0.7em;
+}
+@media screen and (max-width: 970px) {
+  .footer-city-details {
+    margin-left: 0;
+  }
+}
+
+.jumbo-container {
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.jumbo-gradient {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-top: -7%;
+}
+.jumbo-gradient::before {
+  content: "";
+  background: linear-gradient(to top, rgba(16, 16, 14, 0.13), rgba(204, 127, 12, 0.06), rgba(41, 36, 36, 0.7));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.jumbo-text {
+  color: black;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.jumbo-title-small-text {
+  /* color: white; */
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-block-end: 0.5em;
+}
+.jumbo-container-date {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.jumbo-title {
+    /* color: white; */
+    color: #c36606;
+    font-size: 5.5em;
+    letter-spacing: 1px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.jumbo-container-button {
+  cursor: pointer;
+  background-color: black;
+  border: 0.1px solid black;
+  border-radius: 30px;
+  color: white;
+  padding-left: 4em;
+  padding-top: 12px;
+  padding-right: 4em;
+  padding-bottom: 12px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.jumbo-container-button > a {
+  color: white;
+}
+.jumbo-container-button:hover {
+  background-color: rgb(49, 49, 49);
+  border: 0.1px solid black;
+}
+.jumbo-img {
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: -1%;
+    width: 100%;
+}
+.jumbo-img-2 {
+    /* The image used */
+    background-image: url("./images/jumbo.webp");
+    /* Set a specific height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slug {
+  text-align: center;
+}
+.slug-text {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-block-end: 0.5em;
+}
+.slug-title {
+  font-size: 2.2em;
+  margin-block-start: 0;
+}
+.items-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  max-width: 75%;
+  margin: auto;
+  position: relative;
+}
+.item-learnmore {
+  font-weight: bold;
+}
+.item-learnmore > a {
+  color: black;
+}
+.item-img {
+  width: 100%;
+  opacity: 0.9;
+  height: 15em;
+}
+.item {
+  border: 1.2px solid rgba(109, 109, 109, 0.2);
+  text-align: center;
+  max-width: 25em;
+}
+.jumbo-container-2 {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.jumbo-container-2-box {
+  color: black;
+  left: 15%;
+  top: 10%;
+  position: absolute;
+  max-width: 35%;
+}
+.jumbo-title-2 {
+  color: black;
+  font-size: 2.7em;
+  margin-block-end: 0.0em;
+}
+.jumbo-container-2-img {
+    /* The image used */
+    background-image: url("./images/catcostume.jpg");
+    /* Set a specific height */
+    min-height: 30em; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbo-container-2-button {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: black;
+  border: 1px solid black;
+  padding: 20px;
+}
+.jumbo-container-2-button > a {
+  color: white;
+}
+.schedule-header {
+  text-align: center;
+  font-size: 2.3em;
+}
+.schedule-outer-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.schedule-container {
+  color: black;
+}
+.schedule-container ul {
+  margin: 0;
+  margin-top: 35px;
+  margin-left: 16px;
+  list-style: none;
+  position: relative;
+  padding: 1px 100px;
+  color: #fff;
+  font-size: 13px;
+}
+.schedule-container ul:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed black;
+}
+.schedule-container ul li {
+  color: black;
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.schedule-container ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.schedule-container ul li > span {
+  color: black;
+  width: 2px;
+  height: 100%;
+  background: black;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.schedule-container ul li > span:before, .schedule-container ul li > span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #fb9124;
+  left: -5px;
+  top: 0;
+}
+.schedule-container ul li span:after {
+  top: 100%;
+}
+.schedule-container ul li > div {
+  margin-left: 10px;
+}
+.schedule-container div .schedule-title, .schedule-container div .schedule-type {
+  font-weight: 600;
+  font-size: 12px;
+}
+.schedule-container div .schedule-info {
+  font-weight: 300;
+}
+.schedule-container div > div {
+  margin-top: 5px;
+}
+.schedule-container span.schedule-number {
+  height: 100%;
+}
+.schedule-container span.schedule-number span {
+  position: absolute;
+  font-size: 1.1em;
+  left: -40px;
+  font-weight: bold;
+}
+.schedule-container span.schedule-number span:first-child {
+  top: 0;
+}
+.schedule-container span.schedule-number span:last-child {
+  top: 100%;
+}
+.schedule-details {
+  margin-top: 0.5em;
+  width: 28em;
+}
+.items-container-header {
+  font-size: 2.4em;
+  text-align: center;
+}
+.items-container-2 {
+  display: flex;
+  flex-flow: row;
+  width: 75%;
+  margin: auto;
+}
+.item-2 {
+  border: 8px solid black;
+  flex-grow: 1;
+  height: 27em;
+  /* width: 400px; */
+  overflow: hidden;
+}
+.item-2-img {
+  height: 35em;
+  /* width: 100%; */
+  margin-left: -47%;
+}
+.items-container-3 {
+  display: flex;
+  flex-flow: row;
+  width: 75%;
+  margin: auto;
+}
+@media screen and (max-width: 1390px) {
+  .jumbo-text {
+    top: 52%;
+  }
+  .jumbo-title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 970px) {
+  .schedule-details {
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 3em;
+  }
+  .jumbo-container-2-box {
+    top: 0%;
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .jumbo-title {
+    font-size: 3em;
+  }
+  .items-container {
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-bottom: 1em;
+  }
+  .item-2-img {
+    height: 35em;
+    width: auto;
+    margin-left: -5em;
+  }
+  .items-container-2 {
+    flex-wrap: wrap;
+    /* margin-left: 1.0em; */
+  }
+  .items-container-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .jumbo-img {
+    width: auto;
+  }
+  .jumbo-title-2  {
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbo-img {
+    width: auto;
+  }
+  .jumbo-container-button { 
+    font-size: 0.9em;
+  }
+  .jumbo-title-small-text {
+    font-size: 1em;
+  }
+  .jumbo-img {
+    margin-left: -65%;
+    margin-top: -15%;
+  }
+  .jumbo-title-2  {
+    margin-top: 1.5em;
+    font-size: 1.9em;
+  }
+}

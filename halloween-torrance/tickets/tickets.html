@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tickets</title>
+    <link rel="stylesheet" type="text/css" href="./tickets.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Halloween Event Page -->
+    <div class="container">
+            <!-- Home Page Nav -->
+            <div class="nav-container">
+                <div class="nav">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                        <div class="nav-title">
+                            <a href="../default.html">OCT</a>
+                        </div>
+                    </div>
+                    <div class="nav-btn">
+                        <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </label>
+                    </div>
+                    
+                    <div class="nav-links">
+                        <a href="../activities/activities.html">Activities</a>
+                        <a href="../location/location.html">Location</a>
+                        <a href="../tickets/tickets.html">Tickets</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="height: 3em"></div>
+
+            <section>
+                <h1 class="tickets-title">Tickets</h1>
+                <div style="height: 2em"></div>
+                <div class="columns-container">
+                    <div class="columns">
+                        <ul class="price">
+                            <li class="header">Kids and Teens</li>
+                            <li class="grey">FREE</li>
+                            <li>Participate in kid/teen Contests</li>
+                            <li>Pumpkin Patch</li>
+                            <li>Kids / Teen Costume Party</li>                        
+                        </ul>
+                    </div>
+                    <div class="columns">
+                        <ul class="price">
+                            <li class="header">Ages 18 and Up</li>
+                            <li class="grey">$5</li>
+                            <li>Participate in adult Contests</li>
+                            <li>Pumpkin Patch</li>
+                            <li>Adult Costume Party</li>                        
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <div style="height: 3em"></div>
+
+            <section>
+                <div class="form-container">  
+                    <!-- Send user to payment processing page on submit -->
+                    <form id="contact" action="http://webdevbasics.net/scripts/demo.php" method="post">
+                        <h3>Purchase a Ticket</h3>
+                        <h4>Tickets can also be purchased at the event in person!</h4>
+                        <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                        <input placeholder="Number of ADULT tickets" type="text" tabindex="4" required>
+                        </fieldset>
+                        <h6>Note when you click submit, you will be taken to a payment processing page</h6>
+                        <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form> 
+                </div>
+            </section>
+
+            <div style="height: 15em"></div>
+
+            <footer>
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="footer-inner">
+                        <div class="footer-inner-container">
+                            <div class="footer-links">
+                                <a class="footer-link" href="../default.html">Home</a>
+                                <a class="footer-link" href="../activities/activities.html">Activities</a>
+                                <a class="footer-link" href="../location/location.html">Location</a>
+                                <a class="footer-link" href="./tickets.html">Tickets</a>
+                                <a class="footer-link" href="../sitemap/sitemap.html">Site Map</a>
+                            </div>
+                            <div class="footer-city">
+                                <img src="../images/torrancelogo.png" class="footer-torrance" alt="City of Torrance Badge" />
+                                
+                                <div class="footer-city-details">
+                                    <p>3031 Torrance Blvd, Torrance, CA 90503</p>
+                                    <p>Phone: (310) 328-5310  </p>
+                                    <p>City Hall Switchboard Hours: 8 a.m. - 5 p.m. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <div>
+                                <img src="../images/facebook.png" class="footer-social-icon" alt="facebook" />
+                                <img src="../images/twitter.png" class="footer-social-icon" alt="twitter" />
+                                <img src="../images/instagram.png" class="footer-social-icon" alt="instagram" />
+                                <img src="../images/email.png" class="footer-social-icon" alt="email" />
+                            </div>
+                            <div class="footer-copyright">
+                                <p>City of Torrance, CA 90503</p>
+                                <p>Website Designed by Leon Yanagida</p>
+                                <p>Imagine and Take Action</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-weight: 700;
+}
+P {
+  font-family: "Open Sans", sans-serif;
+}
+html, body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  margin: auto;
+}
+.nav-container {
+  background-color: #191919;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 10px;
+  width: 100%;
+  z-index: 1;
+}
+.nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin: auto;
+  max-width: 70%;
+  padding-top: 1.5em;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 1.7em;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+.nav-title > a {
+  color: #fff;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+.nav > .nav-links > a {
+  color: #fff;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+}
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:650px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 1.2em;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 4em;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.footer {
+  background-color: #151515;
+  color: white;
+  height: 100%;
+  padding-bottom: 4em;
+  position: relative;
+}
+.footer-inner {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  max-width: 60%;
+}
+.footer-inner-container {
+  width: 100%;
+}
+.footer-links {
+  border-bottom: 1px solid white;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+  width: 50%;
+}
+.footer-link {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.footer-social {
+  margin-top: 2.1em;
+  width: 30%;
+}
+.footer-social-icon  {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  max-width: 40px;
+  width: 100%;
+}
+.footer-city {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.footer-torrance {
+  width: 8em;
+}
+.footer-city-details {
+  margin-left: 2em;
+}
+.footer-copyright {
+  margin-top: 2em;
+  margin-left: 1em;
+  font-size: 0.7em;
+}
+@media screen and (max-width: 970px) {
+  .footer-city-details {
+    margin-left: 0;
+  }
+}
+.activities-container {
+  width: 100%;
+}
+.activities-title {
+  font-size: 2.7em;
+  text-align: center;
+  text-decoration: underline;
+}
+.activities-inner-container {
+  margin: auto;
+  max-width: 80%;
+}
+.activities-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.activities-box-img {
+  max-height: 45em;
+  width: 100%;
+}
+.activities-box-1a {
+  box-shadow: 47px 47px #e6b11d;
+  width: 40%;
+}
+.activities-box-2a {
+  margin-top: 6em;
+  width: 40%;
+}
+.activities-box-1b {
+  box-shadow: -47px 47px #621584;
+  width: 40%;
+}
+.activities-box-2b {
+  margin-top: 6em;
+  width: 40%;
+}
+.activities-box-2-text {
+  line-height: 1.9em;
+}
+
+@media screen and (max-width: 1400px) {
+  .activities-box {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .activities-box-1a {
+    margin: auto;
+    width: 80%;
+  }
+  .activities-box-2a {
+    margin: auto;
+    width: 80%;
+  }
+  .activities-box-1b {
+    margin: auto;
+    width: 80%;
+  }
+  .activities-box-2b {
+    margin: auto;
+    width: 80%;
+  }
+}
