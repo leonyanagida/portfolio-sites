@@ -176,7 +176,8 @@ a {
   margin-top: 2em;
 }
 .footer-torrance {
-  width: 8em;
+  max-width: 8em;
+  width: 100%;
 }
 .footer-city-details {
   margin-left: 2em;
